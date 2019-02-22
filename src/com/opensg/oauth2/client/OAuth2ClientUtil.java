@@ -22,7 +22,7 @@ public class OAuth2ClientUtil {
 	private static ObjectMapper mapper;
 
 	static {
-		mapper = new ObjectMapper();
+		mapper = new ObjectMapper(); // Jackson을 이용한 JSON 역직렬화
 		// 1.9.x 버전 이상
 		mapper.setSerializationInclusion(Inclusion.NON_NULL);
 		mapper.setSerializationInclusion(Inclusion.NON_EMPTY);
