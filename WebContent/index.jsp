@@ -8,7 +8,7 @@
 	map.put("redirect_uri", Settings.REDIRECT_URI);
 	map.put("response_type", "code");
 	
-	String state = OAuth2ClientUtil.generateRandomState(); // 현재 bitly에선 미지원
+	String state = OAuth2ClientUtil.generateRandomState();
 	session.setAttribute("state", state); // 추후 비교를 위해 세션에 저장
 	map.put("state", state); // 전달
 	
